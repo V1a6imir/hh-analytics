@@ -1,0 +1,676 @@
+[
+  {
+    "salary": null,
+    "vacancy_name": "AI-разработчик (Artificial Intelligence Developer)",
+    "company_name": "ООО ASLZAR",
+    "location": "Наманган, улица Надим Намангани, 12",
+    "experience": "between3And6",
+    "rating": null,
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "ChatGPT API",
+      "LangChain",
+      "RAG",
+      "AI-агенты",
+      "PostgreSQL",
+      "Анализ данных",
+      "Промпт-инжиниринг",
+      "1С интеграция"
+    ],
+    "id": "139075975"
+  },
+  {
+    "salary": "1 000 000 – 1 500 000 ₸ за месяц, на руки",
+    "vacancy_name": "Machine Learning Engineer",
+    "company_name": "АО Kolesa (АО Колеса)",
+    "location": "Алматы",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Git",
+      "Docker",
+      "ML",
+      "Deep Learning",
+      "Machine Learning",
+      "NLP",
+      "Numpy",
+      "pandas",
+      "DVC",
+      "Apache Airflow",
+      "BigQuery",
+      "Kubernetes"
+    ],
+    "id": "139110453"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Senior Machine Learning Engineer / RecSys",
+    "company_name": "ООО Оператор Газпром ИД",
+    "location": "Москва",
+    "experience": "between3And6",
+    "rating": "3.9",
+    "skills": [
+      "Python",
+      "SQL",
+      "Git",
+      "RecSys",
+      "Machine Learning"
+    ],
+    "id": "136808224"
+  },
+  {
+    "salary": "от 400 000 ₽ за месяц, на руки",
+    "vacancy_name": "Machine Learning Engineer (Computer Vision)",
+    "company_name": "АО ЭДС",
+    "location": "Ижевск",
+    "experience": "moreThan6",
+    "rating": "5.0",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "OpenCV",
+      "ONNX",
+      "Numpy",
+      "pandas",
+      "shapely",
+      "onnxruntime",
+      "ultralytics",
+      "mmdet",
+      "transformers",
+      "clearml",
+      "Git",
+      "jira",
+      "Computer Vision"
+    ],
+    "id": "139082134"
+  },
+  {
+    "salary": "от 77 000 ₽ за месяц, до вычета налогов",
+    "vacancy_name": "Младший специалист по машинному обучению (Machine Learning)",
+    "company_name": "МедРокет",
+    "location": "Краснодар, р-н Центральный",
+    "experience": "noExperience",
+    "rating": "4.6",
+    "skills": [
+      "Python",
+      "Математическая статистика",
+      "pandas",
+      "PyTorch",
+      "Machine learning",
+      "Линейная алгебра"
+    ],
+    "id": "138151737"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Middle+ Machine Learning Engineer (ML Infrastructure & Highload)",
+    "company_name": "Сбер. IT",
+    "location": "Москва",
+    "experience": "between3And6",
+    "rating": "4.0",
+    "skills": [],
+    "id": "138997378"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Senior Machine Learning Engineer (Recommendation Systems & Personalization)",
+    "company_name": "ООО ACCESA. Java",
+    "location": "Ташкент, улица Шота Руставели, 19",
+    "experience": "moreThan6",
+    "rating": null,
+    "skills": [
+      "Python",
+      "SQL",
+      "ML",
+      "Recommendation Systems",
+      "Ranking Algorithm",
+      "Personalization",
+      "PyTorch",
+      "MLOps",
+      "A/B Testing",
+      "Model Evaluation",
+      "ML Pipelines",
+      "BigQuery",
+      "Snowflake",
+      "Apache Airflow",
+      "GCP",
+      "ETL",
+      "Vertex AI",
+      "Terraform",
+      "Английский— C1 — Продвинутый"
+    ],
+    "id": "138848057"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Middle Machine Learning Engineer",
+    "company_name": "ООО Айфортекс",
+    "location": "Минск",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [
+      "Python",
+      "AWS",
+      "ETL",
+      "Machine Learning",
+      "Scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "Numpy",
+      "pandas",
+      "FastAPI",
+      "Flask",
+      "XGBoost",
+      "LightGBM",
+      "Английский— B1 — Средний"
+    ],
+    "id": "138664229"
+  },
+  {
+    "salary": "от 400 000 ₽ за месяц, на руки",
+    "vacancy_name": "Machine Learning Engineer (Computer Vision)",
+    "company_name": "АО ЭДС",
+    "location": "Новосибирск",
+    "experience": "moreThan6",
+    "rating": "5.0",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "OpenCV",
+      "ONNX",
+      "Numpy",
+      "pandas",
+      "shapely",
+      "onnxruntime",
+      "ultralytics",
+      "mmdet",
+      "transformers",
+      "clearml",
+      "Git",
+      "jira",
+      "Computer Vision"
+    ],
+    "id": "138706986"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Middle Machine Learning Engineer- Pakistan",
+    "company_name": "Alif Uzbekistan",
+    "location": "Ташкент, улица Укчи, 3",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [],
+    "id": "138687444"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Machine Learning инженер (NLP)",
+    "company_name": "ЭВРИКА, Санкт-Петербург",
+    "location": "Санкт-Петербург",
+    "experience": "between1And3",
+    "rating": "3.9",
+    "skills": [
+      "Python",
+      "ML",
+      "Deep Learning",
+      "Big Data",
+      "Machine Learning",
+      "Linux",
+      "Git",
+      "SQL"
+    ],
+    "id": "138528715"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Machine Learning Engineer / Data Scientist",
+    "company_name": "Санкт-Петербургский политехнический университет Петра Великого (ФГАОУ ВО СПбПУ)",
+    "location": "Санкт-Петербург",
+    "experience": "between3And6",
+    "rating": "4.0",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Numpy",
+      "Машинное обучение"
+    ],
+    "id": "138507615"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Lead Machine Learning Engineer/Data Scientist (Lead ML/DS)",
+    "company_name": "Team.Inno / Фабрика инноваций и решений",
+    "location": "Минск",
+    "experience": "between3And6",
+    "rating": null,
+    "skills": [],
+    "id": "135462055"
+  },
+  {
+    "salary": "от 400 000 ₽ за месяц, на руки",
+    "vacancy_name": "Machine Learning Engineer (Computer Vision)",
+    "company_name": "АО ЭДС",
+    "location": "Москва",
+    "experience": "moreThan6",
+    "rating": "5.0",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "OpenCV",
+      "ONNX",
+      "Numpy",
+      "pandas",
+      "shapely",
+      "onnxruntime",
+      "ultralytics",
+      "mmdet",
+      "transformers",
+      "clearml",
+      "Git",
+      "jira",
+      "Computer Vision"
+    ],
+    "id": "138412247"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Machine Learning Engineer/Data Scientist (ML/DS)",
+    "company_name": "Team.Inno / Фабрика инноваций и решений",
+    "location": "Минск",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [
+      "Python",
+      "Английский язык"
+    ],
+    "id": "135324536"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Data Labeling Intern — Computer Vision / AI",
+    "company_name": "ТОО Biometric(Биометрик)",
+    "location": "Алматы",
+    "experience": "noExperience",
+    "rating": null,
+    "skills": [
+      "Data Labeling",
+      "Data Annotation",
+      "Computer Vision",
+      "Data Quality",
+      "Работа с изображениями",
+      "Внимательность к деталям",
+      "Работа по инструкциям",
+      "AI Tools",
+      "Английский— B1 — Средний"
+    ],
+    "id": "138440765"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Computer Vision Engineer (intern/junior)",
+    "company_name": "ТРИДИВИ",
+    "location": "Челябинск, р-н Центральный",
+    "experience": "noExperience",
+    "rating": "4.2",
+    "skills": [
+      "Python",
+      "Сomputer Vision",
+      "Deep Learning",
+      "Machine Learning",
+      "Нейросети",
+      "C++",
+      "Английский язык",
+      "Алгоритмы и структуры данных"
+    ],
+    "id": "139213538"
+  },
+  {
+    "salary": "150 000 – 200 000 ₽ за месяц, на руки",
+    "vacancy_name": "ML-инженер",
+    "company_name": "ONKRON",
+    "location": "Санкт-Петербург",
+    "experience": "between1And3",
+    "rating": "3.6",
+    "skills": [],
+    "id": "138488220"
+  },
+  {
+    "salary": "13 000 000 – 20 000 000 so'm за месяц, на руки",
+    "vacancy_name": "Преподаватель программирования",
+    "company_name": "ООО PROFI UNIVERSITY",
+    "location": "Ташкент, Бектемирский район",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [
+      "Python",
+      "Разработка ПО",
+      "С#",
+      "Java",
+      "JavaScript",
+      "HTML",
+      "PHP",
+      "Git",
+      "SQL",
+      "PostgreSQL",
+      "Веб-программирование",
+      "Linux",
+      "Английский— A2 — Элементарный",
+      "Русский— C2 — В совершенстве"
+    ],
+    "id": "138960281"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "ML Engineer (Computer Vision / LLM)",
+    "company_name": "ООО УАЗ",
+    "location": "Санкт-Петербург",
+    "experience": "between1And3",
+    "rating": "4.6",
+    "skills": [
+      "ML",
+      "LLM",
+      "Machine Learning",
+      "Computer Vision",
+      "Аналитическое мышление",
+      "Базы данных",
+      "Машинное обучение",
+      "Работа с базами данных"
+    ],
+    "id": "138726173"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Senior ML Platform Engineer",
+    "company_name": "РУСАЛ",
+    "location": "Москва",
+    "experience": "moreThan6",
+    "rating": "4.4",
+    "skills": [
+      "Linux",
+      "Python",
+      "Kubernetes",
+      "Docker",
+      "MLops"
+    ],
+    "id": "138878040"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Аналитик",
+    "company_name": "НеоБИТ",
+    "location": "Санкт-Петербург",
+    "experience": "between1And3",
+    "rating": "4.1",
+    "skills": [
+      "Python",
+      "Сбор и анализ информации",
+      "Анализ данных",
+      "Аналитические исследования",
+      "machine learning",
+      "ML",
+      "Аналитический склад ума",
+      "Английский— B2 — Средне-продвинутый"
+    ],
+    "id": "138530446"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Machine Learning Engineer/Data Scientist (ML/DS)",
+    "company_name": "Team.Inno / Фабрика инноваций и решений",
+    "location": "Минск",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [
+      "Python",
+      "Английский язык"
+    ],
+    "id": "135324536"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "ML Middle/Senior Engineer (Trading)",
+    "company_name": "Itransition",
+    "location": "Тбилиси",
+    "experience": "between3And6",
+    "rating": null,
+    "skills": [
+      "Английский язык",
+      "MLflow",
+      "SQL",
+      "Английский— B1 — Средний"
+    ],
+    "id": "138716846"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Data Engineer",
+    "company_name": "Team.Inno / Фабрика инноваций и решений",
+    "location": "Минск",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [
+      "Английский язык"
+    ],
+    "id": "138782868"
+  },
+  {
+    "salary": "4 500 – 5 500 $ за месяц, на руки",
+    "vacancy_name": "AI / ML Engineer (LLM) - Dubai",
+    "company_name": "Сybersupremacy FZCO",
+    "location": "эмират Дубай, Хадаэк Мухаммед Бин Рашид, Эс Санйа, Эс Санйа 5, Джумейра Лейкс Тауэрс, JLT Cluster N",
+    "experience": "between3And6",
+    "rating": null,
+    "skills": [
+      "Python",
+      "RAG",
+      "Английский язык",
+      "LLM",
+      "Machine Learning",
+      "OpenAI",
+      "LangChain",
+      "REST API",
+      "Английский— B2 — Средне-продвинутый"
+    ],
+    "id": "138361599"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "ML Middle/Senior Engineer (Trading)",
+    "company_name": "Itransition",
+    "location": "Ташкент",
+    "experience": "between3And6",
+    "rating": null,
+    "skills": [
+      "Английский язык",
+      "MLflow",
+      "SQL",
+      "Английский— B1 — Средний"
+    ],
+    "id": "138716847"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Lead Machine Learning Engineer/Data Scientist (Lead ML/DS)",
+    "company_name": "Team.Inno / Фабрика инноваций и решений",
+    "location": "Минск",
+    "experience": "between3And6",
+    "rating": null,
+    "skills": [],
+    "id": "135462055"
+  },
+  {
+    "salary": "от 400 000 ₽ за месяц, на руки",
+    "vacancy_name": "ML-инженер (LLM)",
+    "company_name": "АО ЭДС",
+    "location": "Ижевск",
+    "experience": "moreThan6",
+    "rating": "5.0",
+    "skills": [
+      "Machine Learning",
+      "LLM",
+      "Написание промптов",
+      "Разработка RAG-пайплайнов",
+      "NLP",
+      "Классические NLP-методы"
+    ],
+    "id": "138490045"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Senior Data Scientist",
+    "company_name": "Sputnik8",
+    "location": "Санкт-Петербург",
+    "experience": "between3And6",
+    "rating": "4.4",
+    "skills": [
+      "Машинное обучение",
+      "CatBoost",
+      "XGBoost",
+      "LightGBM",
+      "Рекомендательные системы",
+      "SQL",
+      "Docker",
+      "FastAPI",
+      "MLflow",
+      "PyTorch",
+      "Алгоритмы и структуры данных"
+    ],
+    "id": "135359774"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Data Scientist / ML Engineer (AdTech experience)",
+    "company_name": "Team.Inno / Фабрика инноваций и решений",
+    "location": "Минск",
+    "experience": "between3And6",
+    "rating": null,
+    "skills": [
+      "Английский— B2 — Средне-продвинутый"
+    ],
+    "id": "135462022"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Geoscience ML Engineer / Data Scientist (только геология, сейсмика, ДЗЗ)",
+    "company_name": "АО РНГ",
+    "location": "Москва",
+    "experience": "moreThan6",
+    "rating": "3.6",
+    "skills": [
+      "Геологическая разведка и интерпретация данных",
+      "Работа с геологическими базами данных",
+      "Предобработка данных"
+    ],
+    "id": "138052408"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Lead / Principal Computer Vision Researcher",
+    "company_name": "ИП Вельков Григорий Александрович",
+    "location": "эмират Дубай",
+    "experience": "moreThan6",
+    "rating": null,
+    "skills": [
+      "Английский— B2 — Средне-продвинутый"
+    ],
+    "id": "138416536"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Lead / Principal Computer Vision Researcher",
+    "company_name": "ИП Вельков Григорий Александрович",
+    "location": "эмират Дубай",
+    "experience": "moreThan6",
+    "rating": null,
+    "skills": [
+      "Английский— B2 — Средне-продвинутый"
+    ],
+    "id": "138416535"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Data Engineer with German",
+    "company_name": "Team.Inno / Фабрика инноваций и решений",
+    "location": "Минск",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [
+      "Английский язык",
+      "Немецкий язык",
+      "Немецкий— B2 — Средне-продвинутый"
+    ],
+    "id": "138758299"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Middle/Senior AI Agent Developer",
+    "company_name": "Itransition",
+    "location": "Минск",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [
+      "Английский язык",
+      "Python",
+      "Английский— A2 — Элементарный"
+    ],
+    "id": "133309853"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Lead / Principal Computer Vision Researcher",
+    "company_name": "ИП Вельков Григорий Александрович",
+    "location": "эмират Дубай",
+    "experience": "moreThan6",
+    "rating": null,
+    "skills": [
+      "Английский— B2 — Средне-продвинутый"
+    ],
+    "id": "138416537"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "ML Middle/Senior Engineer (Trading)",
+    "company_name": "Itransition",
+    "location": "Минск",
+    "experience": "between3And6",
+    "rating": null,
+    "skills": [
+      "Английский язык",
+      "MLflow",
+      "SQL",
+      "Английский— B1 — Средний"
+    ],
+    "id": "133323220"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "Lead / Principal Computer Vision Researcher",
+    "company_name": "ИП Вельков Григорий Александрович",
+    "location": "эмират Дубай",
+    "experience": "moreThan6",
+    "rating": null,
+    "skills": [
+      "Английский— B2 — Средне-продвинутый"
+    ],
+    "id": "138416539"
+  },
+  {
+    "salary": null,
+    "vacancy_name": "BI/Data Analyst",
+    "company_name": "Team.Inno / Фабрика инноваций и решений",
+    "location": "Минск",
+    "experience": "between1And3",
+    "rating": null,
+    "skills": [
+      "Python",
+      "pandas",
+      "PowerBi",
+      "Tableau",
+      "Английский язык"
+    ],
+    "id": "138353934"
+  }
+]
