@@ -1,1 +1,15 @@
-.venv
+# окружение
+.venv/
+
+# кэш Python и pytest
+__pycache__/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# данные, которые генерирует парсер
+cards.json
+cards.txt
+data/
+*.db
