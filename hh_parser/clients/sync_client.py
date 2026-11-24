@@ -4,10 +4,8 @@ import requests
 
 class HHClient:
 	
-	def __init__(self, headers=HEADERS, url=URL, card_url=CARD_URL):
-		self.headers = headers
-		self.url = url
-		self.card_url = card_url
+	def __init__(self):
+		self.session = requests.Session()
 
 	def get_search_page(
 			self, query,
@@ -30,18 +28,18 @@ class HHClient:
 			'work_schedule_by_days': work_schedule_by_days
 		}
 
-		r = requests.get(self.url, params=payload, headers=self.headers)
-		
-		html = r.text
-		return html
+		return self._get_html(URL, params=payload)
 
-	def get_vacancy_page(self, vacancy_id: str):
+	
+	def get_vacancy_page(self, vacancy_id):
 
-		full_card_url = self.card_url + vacancy_id
-		r = requests.get(full_card_url, headers=self.headers)
+		full_card_url = CARD_URL + str(vacancy_id)
+		return self._get_html(full_card_url)
 
-		card_html = r.text
-		return card_html
+	def _get_html(self, url, params=None):
+
+		r = self.session.get(url, params=params, headers=HEADERS)
+		return r.text
 
 	
 
