@@ -8,3 +8,12 @@ EXCHANGE_RATE = {
 }
 
 UNKNOWN_CURRENCY = 'Такой валюты нет в справочнике'
+
+
+# Параметры запроса
+HEADERS = {
+	'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36'
+}
+
+URL = 'https://hh.ru/search/vacancy'
+CARD_URL = 'https://hh.ru/vacancy/'
