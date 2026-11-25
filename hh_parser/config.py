@@ -16,8 +16,8 @@ HEADERS = {
 }
 TIMEOUT = 2
 MAX_RETRIES = 4
-REQUEST_DELAY = 2
-PAUSE = 1
+REQUEST_DELAY = 1
+RETRY_DELAY = 1
 
 URL = 'https://hh.ru/search/vacancy'
 CARD_URL = 'https://hh.ru/vacancy/'

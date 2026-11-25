@@ -19,7 +19,7 @@ class RetryableError(ClientError):
 	"""Запрос можно повторить"""
 
 class NetworkError(RetryableError):
-	"""Нет сети, нужен timeout"""
+	"""Нет сети или сервер не ответил вовремя"""
 
 class TooManyRequestsError(RetryableError):
 	"""Слишком много запросов нужна пауза"""

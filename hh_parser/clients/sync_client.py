@@ -1,4 +1,4 @@
-from hh_parser.config import HEADERS, URL, CARD_URL, TIMEOUT, LEN_OF_HTML, MAX_RETRIES, REQUEST_DELAY, PAUSE
+from hh_parser.config import HEADERS, URL, CARD_URL, TIMEOUT, LEN_OF_HTML, MAX_RETRIES, REQUEST_DELAY, RETRY_DELAY
 from hh_parser.clients.exceptions import ClientError, NotFoundError, BlockedError, RetryableError, NetworkError, ServerError, TooManyRequestsError
 import requests
 import time
@@ -45,7 +45,7 @@ class HHClient:
 			r = self.session.get(url, params=params, headers=HEADERS, timeout=TIMEOUT)
 		
 		except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
-			raise NetworkError(f'Ошибка соединения - нужен timeout | {url}') from e
+			raise NetworkError(f'Нет связи или сервер не ответил вовремя | {url}') from e
 		
 		except requests.exceptions.RequestException as e:
 			raise ClientError(f'Ошибка соединения | {url}') from e
@@ -72,20 +72,20 @@ class HHClient:
 
 	def _make_attempts(self, url, params=None):
 
-		time.sleep(PAUSE)
+		time.sleep(REQUEST_DELAY)
 		
-		for attempt in range(0, MAX_RETRIES):
+		for attempt in range(1, MAX_RETRIES + 1):
 
 			try:
 				return self._get_html(url, params)
 			
 			except RetryableError:
-				print(f'Попытка {attempt + 1}: не удалось получить страницу')
+				print(f'Попытка {attempt}: не удалось получить страницу')
 
-				if attempt == MAX_RETRIES - 1:
+				if attempt == MAX_RETRIES:
 					raise
 				
-				time.sleep(REQUEST_DELAY ** attempt)
+				time.sleep((2 ** (attempt - 1)) * RETRY_DELAY)
 
 	
 
