@@ -1,4 +1,5 @@
-from hh_parser.config import HEADERS, URL, CARD_URL
+from hh_parser.config import HEADERS, URL, CARD_URL, TIMEOUT, LEN_OF_HTML
+from hh_parser.clients.exceptions import ClientError, NotFoundError, BlockedError, NetworkError, ServerError, TooManyRequestsError
 import requests
 
 
@@ -38,7 +39,33 @@ class HHClient:
 
 	def _get_html(self, url, params=None):
 
-		r = self.session.get(url, params=params, headers=HEADERS)
+		try:
+			r = self.session.get(url, params=params, headers=HEADERS, timeout=TIMEOUT)
+		
+		except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+			raise NetworkError(f'Ошибка соединения | {url}') from e
+		
+		except requests.exceptions.RequestException as e:
+			raise ClientError(f'Ошибка соединения | {url}') from e
+		
+		
+		if r.status_code == 404 and LEN_OF_HTML < 1000:
+			raise BlockedError(f'Не удалось получить страницу | {r.url} | {r.status_code}')
+		
+		if r.status_code == 404 and LEN_OF_HTML >= 1000:
+			raise NotFoundError(f'Не удалось найти страницу | {r.url} | {r.status_code}')
+
+		if r.status_code == 403:
+			raise BlockedError(f'Доступ заблокирован | {r.url} | {r.status_code}')
+
+		if r.status_code >= 500:
+			raise ServerError(f'Проблемы на сервере | {r.url} | {r.status_code}')
+
+		if r.status_code == 429:
+			raise TooManyRequestsError(f'Проблемы на сервере | {r.url} | {r.status_code}')
+
+		if r.status_code != 200:
+			raise ClientError(f'Ошибка | {r.url} | {r.status_code}')
 		return r.text
 
 	
