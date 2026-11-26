@@ -13,6 +13,19 @@ class HHClient:
 	def __init__(self):
 		self.session = requests.Session()
 
+	def __enter__(self):
+		
+		return self
+
+	def close(self):
+		
+		self.session.close()
+
+	def __exit__(self, exc_type, exc, tb):
+		
+		self.close()
+
+	
 	def get_search_page(
 			self, query,
 			page_number=1, region=None,
@@ -81,7 +94,7 @@ class HHClient:
 		for attempt in range(1, MAX_RETRIES + 1):
 
 			try:
-				logger.info('Отправляю запрос на %s, | параметры запроса %s', url, params)
+				logger.info('Отправляю запрос на %s | параметры запроса %s', url, params)
 				return self._get_html(url, params)
 			
 			except RetryableError as e:
