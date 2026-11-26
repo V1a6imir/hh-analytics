@@ -2,6 +2,10 @@ from hh_parser.config import HEADERS, URL, CARD_URL, TIMEOUT, LEN_OF_HTML, MAX_R
 from hh_parser.clients.exceptions import ClientError, NotFoundError, BlockedError, RetryableError, NetworkError, ServerError, TooManyRequestsError
 import requests
 import time
+import logging
+
+
+logger = logging.getLogger(__name__)
 
 
 class HHClient:
@@ -77,15 +81,23 @@ class HHClient:
 		for attempt in range(1, MAX_RETRIES + 1):
 
 			try:
+				logger.info('Отправляю запрос на %s, | параметры запроса %s', url, params)
 				return self._get_html(url, params)
 			
-			except RetryableError:
-				print(f'Попытка {attempt}: не удалось получить страницу')
+			except RetryableError as e:
 
 				if attempt == MAX_RETRIES:
+					
+					logger.error('Не удалось получить страницу %s', url)
 					raise
+
+
+				pause = (2 ** (attempt - 1)) * RETRY_DELAY
 				
-				time.sleep((2 ** (attempt - 1)) * RETRY_DELAY)
+				logger.warning('Попытка %s из %s: %s | пауза = %s', attempt, MAX_RETRIES, e, pause)
+
+				time.sleep(pause)
+
 
 	
 
