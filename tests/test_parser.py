@@ -1,7 +1,10 @@
 from pathlib import Path
 import pytest
-from hh_parser.parsers import parse_search_page_html, text_or_none
+from hh_parser.parsers import parse_search_page_html, text_or_none, parse_vacancy_page_html
 from bs4 import BeautifulSoup
+from hh_parser.models import Salary
+
+
 
 FIXTURES = Path(__file__).parent / 'fixtures'
 
@@ -75,5 +78,39 @@ def test_if_have_text():
 	value = BeautifulSoup('<div>        bababa c bebebe   </div>', 'html.parser')
 	check = text_or_none(value, 'div')
 	assert check == 'bababa c bebebe'
+
+
+
+def test_vacancy_with_skills():
+
+	html = (FIXTURES / 'vacancy_with_skills.html').read_text(encoding='utf-8')
+
+	vacancy = parse_vacancy_page_html(html)
+
+	assert vacancy['skills'] == ['.Net', 'Elasticsearch', 'vLLM', 'MCP', 'RAG']
+
+
+
+def test_vacancy_without_skills():
+
+	html = (FIXTURES / 'vacancy_without_skills.html').read_text(encoding='utf-8')
+
+	vacancy = parse_vacancy_page_html(html)
+
+	assert vacancy['skills'] == []
+
+
+
+def test_salary():
+
+	html = (FIXTURES / 'vacancy_with_skills.html').read_text(encoding='utf-8')
+
+	vacancy = parse_vacancy_page_html(html)
+
+	result = Salary.from_text(vacancy['salary'])
+
+	assert result.to == 300000
+
+
 
 

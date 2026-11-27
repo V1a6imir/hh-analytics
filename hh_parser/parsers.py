@@ -24,8 +24,21 @@ def parse_search_page_html(search_page):
 			'experience': experience['data-qa'].removeprefix('vacancy-serp__vacancy-work-experience-') if experience else None
 
 		}
+
 		vacancies.append(vacancy)
 		
 	return vacancies
+
+def parse_vacancy_page_html(vacancy_page):
+
+
+	soup = BeautifulSoup(vacancy_page, 'html.parser')
+	
+	salary = text_or_none(soup, '[data-qa="vacancy-salary"]')
+	# find_all вернет пустой список если ничего не найдет
+	skills = soup.find_all('li', attrs={'data-qa': 'skills-element'})
+	skill_names = [s.get_text(strip=True).replace('\xa0', ' ').replace('\u202f', ' ') for s in skills]
+
+	return {'salary': salary, 'skills': skill_names}
 
 
