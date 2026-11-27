@@ -29,7 +29,7 @@ while page < 2:
 
 	soup = BeautifulSoup(r.text, 'html.parser')
 
-	cards = soup.select('[data-qa="vacancy-serp__vacancy"]')
+	cards = soup.select('[data-qa~="vacancy-serp__vacancy"]')
 	if not cards:
 		break
 
